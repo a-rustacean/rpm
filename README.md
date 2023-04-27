@@ -14,16 +14,16 @@ cd rpm
 ## Initial setup
 
 Set working directory (optional):
-default: $HOME/Devs
 
 ```console
+# default: $HOME/Devs
 rpm set workdir <YOUR WORKING DIRECTORY>
 ```
 
 Set templates directory (optional):
-default: $HOME/Templates
 
 ```console
+# default: $HOME/Templates
 rpm set templates-dir <YOUR TEMPLATES DIRECTORY>
 ```
 > Note: every template folder name must end with `-template`
