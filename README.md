@@ -4,7 +4,7 @@ rpm (Rust project manager) is a open source tool for managing your rust project 
 
 ## Installation
 
-```console
+```shell
 # make sure you have rust installed on your system
 git clone https://github.com/a-rustacean/rpm.git
 cd rpm
@@ -15,14 +15,14 @@ cd rpm
 
 Set working directory (optional):
 
-```console
+```shell
 # default: $HOME/Devs
 rpm set workdir <YOUR WORKING DIRECTORY>
 ```
 
 Set templates directory (optional):
 
-```console
+```shell
 # default: $HOME/Templates
 rpm set templates-dir <YOUR TEMPLATES DIRECTORY>
 ```
@@ -30,7 +30,7 @@ rpm set templates-dir <YOUR TEMPLATES DIRECTORY>
 
 Analyze:
 
-```console
+```shell
 rpm analyze
 ```
 
