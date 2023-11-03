@@ -68,7 +68,7 @@ list projects:
 # list all project
 rpm list
 
-# list completd projects
+# list completed projects
 rpm list completed
 
 # list incomplete projects

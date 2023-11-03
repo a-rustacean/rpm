@@ -274,12 +274,12 @@ fn handle_list_command(project_config: ProjectConfig, command: ListCommand) {
 }
 
 fn reset_config(home: &PathBuf) -> std::io::Result<()> {
-    let deafult_config = format!(
+    let default_config = format!(
         r#"{{"workdir": "{}", "templates_dir": "{}"}}"#,
         home.join("Devs").display(),
         home.join("Templates").display()
     );
-    fs::write(home.join(".rpmrc.json"), deafult_config)
+    fs::write(home.join(".rpmrc.json"), default_config)
 }
 
 fn reset_project_config(workdir: &PathBuf) -> std::io::Result<()> {
