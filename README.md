@@ -1,84 +1,87 @@
-# rpm
+# RPM (Rust Project Manager)
 
-rpm (Rust project manager) is a open source tool for managing your rust project in an organized way
+RPM is an open-source tool designed for efficient management of Rust projects in a structured manner.
 
 ## Installation
 
+To install RPM, ensure Rust is installed on your system, then run:
+
 ```shell
-# make sure you have rust installed on your system
 git clone https://github.com/a-rustacean/rpm.git
 cd rpm
 ./install.sh
 ```
 
-## Initial setup
+## Initial Setup
 
-Set working directory (optional):
+### Set Working Directory (Optional):
 
 ```shell
-# default: $HOME/Devs
+# Default: $HOME/Devs
 rpm set workdir <YOUR WORKING DIRECTORY>
 ```
 
-Set templates directory (optional):
+### Set Templates Directory (Optional):
 
 ```shell
-# default: $HOME/Templates
+# Default: $HOME/Templates
 rpm set templates-dir <YOUR TEMPLATES DIRECTORY>
 ```
-> Note: every template folder name must end with `-template`
+> Note: Ensure every template folder name ends with `-template`.
 
-Analyze:
+### Analyze:
 
 ```shell
 rpm analyze
 ```
 
-> This command generates `projects.json` file in your working directory. This helps rpm to know about your projects.
+> This command generates the `projects.json` file in your working directory, aiding RPM in project management.
 > 
-> Note: you have to run this command every time you delete or manually create a project.
+> Note: Run this command whenever you delete or manually create a project.
 
 ## Usage
 
-### create a project:
+### Create a Project:
 
 ```shell
-# creates a bin project
+# Creates a bin project
 rpm new <NAME>
 
-# creates a lib project
+# Creates a lib project
 rpm new <NAME> --template lib
 
-# creates a project with the given template
+# Creates a project with the specified template
 rpm new <NAME> --template <TEMPLATE>
 ```
 
-### mark a project:
+### Mark a Project:
 
 ```shell
-# mark as completed
+# Mark as completed
 rpm mark <NAME> completed
 
-# mark as incomplete
+# Mark as incomplete
 rpm mark <NAME> incomplete
 ```
 
-### list projects:
+### List Projects:
 
 ```shell
-# list all project
+# List all projects
 rpm list
 
-# list completed projects
+# List completed projects
 rpm list completed
 
-# list incomplete projects
+# List incomplete projects
 rpm list incomplete
 ```
 
 ## Uninstall
 
 ```shell
-# make sure you are in the directory you cloned from github
+# Ensure you are in the cloned directory from GitHub
 ./uninstall.sh
 ```
+
+Feel free to enhance your Rust development workflow with RPM!
