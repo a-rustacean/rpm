@@ -34,14 +34,15 @@ Analyze:
 rpm analyze
 ```
 
-> This command generates `projects.json` file in your working directory. This helps rpm to know about your prijects.
+> This command generates `projects.json` file in your working directory. This helps rpm to know about your projects.
+> 
 > Note: you have to run this command every time you delete or manually create a project.
 
 ## Usage
 
-create a project:
+### create a project:
 
-```console
+```shell
 # creates a bin project
 rpm new <NAME>
 
@@ -52,9 +53,9 @@ rpm new <NAME> --template lib
 rpm new <NAME> --template <TEMPLATE>
 ```
 
-mark a project:
+### mark a project:
 
-```console
+```shell
 # mark as completed
 rpm mark <NAME> completed
 
@@ -62,9 +63,9 @@ rpm mark <NAME> completed
 rpm mark <NAME> incomplete
 ```
 
-list projects:
+### list projects:
 
-```console
+```shell
 # list all project
 rpm list
 
@@ -77,7 +78,7 @@ rpm list incomplete
 
 ## Uninstall
 
-```console
+```shell
 # make sure you are in the directory you cloned from github
 ./uninstall.sh
 ```
