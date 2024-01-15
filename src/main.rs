@@ -1,5 +1,5 @@
 mod args;
-use args::{Action, MarkAction, MarkCommand, NewCommand, ProjectArgs, SetCommand, ListCommand};
+use args::{Action, ListCommand, MarkAction, MarkCommand, NewCommand, ProjectArgs, SetCommand};
 use clap::Parser;
 use home::home_dir;
 use serde::{Deserialize, Serialize};
@@ -116,7 +116,7 @@ fn handle_new_command(config: Config, mut project_config: ProjectConfig, command
             r#"[package]
 name = "{}"
 version = "0.1.0"
-authors = ["Dilshad <dilshadplayingminecraft@outlook.com>"]
+authors = ["Dilshad <a-rustacean@outlook.com>"]
 edition = "2021"
 
 [dependencies]"#,
@@ -368,6 +368,6 @@ fn main() {
         Action::Set(set_command) => handle_set_command(config, set_command, config_path),
         Action::Mark(mark_command) => handle_mark_command(config, project_config, mark_command),
         Action::Analyze => handle_analyze_command(config, project_config),
-        Action::List(list_command) => handle_list_command(project_config, list_command)
+        Action::List(list_command) => handle_list_command(project_config, list_command),
     };
 }
